@@ -4,12 +4,12 @@
  let formSection = document.querySelector(".form-section");
 
  signup.addEventListener("click", () => {
-	slider.classList.add("moveslider");
+	slider.classList.add("slider");
  	formSection.classList.add("form-section-move");
  });
 
  login.addEventListener("click", () => {
- 	slider.classList.remove("moveslider");
+ 	slider.classList.remove("slider");
  	formSection.classList.remove("form-section-move");
  });
 email.addEventListener('change', e => {
