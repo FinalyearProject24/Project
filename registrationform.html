@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<form>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+            background-image: url('image.jpeg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+            background-color: #0daecb;
+         }
+         </style>
+</head>
+
+      <body>
+    <header>
+        <h1 class="title">Registration form</h1>
+    </header>
+    <br><br>
+    <h1 style="text-align: center;">Registration form</h1>
+    <form name="myForm" oninput="checkInput()" method="post">
+        <label for="First Name">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your first name" value="" required>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter your Last name" value="" required><br><br>
+        <label for="Email">Email:</label>
+        <input type="email" id="email" class='email' placeholder="Enter your Email" value="" required><br><br>
+        <p style="color: red;" class="email-message"></p>
+
+        <p style="color: red;" class="invalid-email-message"></p>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" name="phone"  pattern="[0-9]{10}"  title="Ten digits code" required/><br><br>
+        <label for="Education">Education:</label>
+        <input type="text" id="eduname" placeholder="Enter your College name" value="" required><br><br>
+        <label for="Degree">Degree:</label>
+        <select id="Degree" name="Degree">
+            <option value="B.TECH,Information Technology">B.TECH,Information Technology</option>
+            <option value="B.E,Computer Science">B.E,Computer Science</option>
+            <option value="BSC">BSC</option>
+            <option value="B.COM">B.COM</option>
+        </select><br><br>
+        <label for="Skills">Skills:</label><br>
+        <textarea name="Skills" id="Skills" rows="10" cols="30" style="margin: 10px; border: 1px solid black; padding: 10px; width: 300px; height: 150px;"required></textarea><br><br>
+        <label for="myfile">Resume:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <button class="btn success" type="submit" id="submitBtn" disabled >Submit</button>
+        <button class="btn danger"><a href="index.html">Back</button></a>
+
+
+
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
